@@ -1,0 +1,199 @@
+# My Branches Manual Screenshot Capture Guide
+
+## Quick Start Instructions
+
+### Prerequisites ✅
+- Chrome browser (latest version recommended)
+- My Branches app running at http://localhost:5000
+- All app pages validated and accessible
+
+### Step-by-Step Process
+
+#### 1. Open Chrome Developer Tools
+1. Open Chrome and navigate to `http://localhost:5000`
+2. Press `F12` to open Developer Tools
+3. Click the "Toggle device toolbar" icon (📱) or press `Ctrl+Shift+M`
+4. Select "Responsive" from the device dropdown
+
+#### 2. Configure Device Dimensions
+
+For each screenshot size, set these exact dimensions:
+
+**iPhone 6.7-inch (iPhone 14 Pro Max, 15 Pro Max)**
+- Dimensions: `430 x 932` pixels  
+- Device Pixel Ratio: `3x`
+- Final screenshot: `1290 x 2796` pixels
+
+**iPhone 6.5-inch (iPhone 14 Plus, 15 Plus)**
+- Dimensions: `428 x 926` pixels
+- Device Pixel Ratio: `3x`  
+- Final screenshot: `1284 x 2778` pixels
+
+**iPhone 5.5-inch (iPhone 8 Plus)**
+- Dimensions: `414 x 736` pixels
+- Device Pixel Ratio: `3x`
+- Final screenshot: `1242 x 2208` pixels
+
+**iPad 12.9-inch (iPad Pro)**
+- Dimensions: `1024 x 1366` pixels
+- Device Pixel Ratio: `2x`
+- Final screenshot: `2048 x 2732` pixels
+
+**Android Phone**  
+- Dimensions: `360 x 640` pixels
+- Device Pixel Ratio: `3x`
+- Final screenshot: `1080 x 1920` pixels
+
+**Android 7-inch Tablet**
+- Dimensions: `600 x 960` pixels  
+- Device Pixel Ratio: `2x`
+- Final screenshot: `1200 x 1920` pixels
+
+**Android 10-inch Tablet**
+- Dimensions: `800 x 1280` pixels
+- Device Pixel Ratio: `2x` 
+- Final screenshot: `1600 x 2560` pixels
+
+#### 3. Capture Screenshots for Each Page
+
+**Page 1: Dashboard Hero** (`http://localhost:5000/`)
+- Navigate to home page
+- Wait for all content to load (stats cards, activity feed)
+- Look for: Family statistics, recent activity, upcoming events
+- Screenshot filename pattern: `dashboard-hero-[device].png`
+
+**Page 2: Groups Overview** (`http://localhost:5000/groups`)  
+- Navigate to groups page
+- Wait for group cards to load
+- Look for: Group listings, member counts, "Create Group" button
+- Screenshot filename pattern: `groups-overview-[device].png`
+
+**Page 3: Event Planning** (`http://localhost:5000/events`)
+- Navigate to events page  
+- Wait for event content to load
+- Look for: Event listings, create event form, RSVPs
+- Screenshot filename pattern: `event-planning-[device].png`
+
+**Page 4: Group Chat** (`http://localhost:5000/chat`)
+- Navigate to chat page
+- Wait for messages to load
+- Look for: Message bubbles, member avatars, input field
+- Screenshot filename pattern: `group-chat-[device].png`
+
+**Page 5: Premium Labels** (`http://localhost:5000/labels`) 
+- Navigate to mailing labels page
+- Wait for label interface to load  
+- Look for: "Premium Feature" indicator, address list, print preview
+- Screenshot filename pattern: `premium-labels-[device].png`
+
+#### 4. Capture Process
+1. Set the device dimensions as specified above
+2. Navigate to the target URL
+3. Wait 3-5 seconds for full page load
+4. Ensure My Branches purple theme is visible
+5. Right-click in the viewport → "Capture screenshot" → "Capture full size screenshot"  
+6. Save with the correct filename in the appropriate folder
+
+### File Organization
+
+Save all screenshots in this structure:
+```
+app-store-assets/screenshots/
+├── iphone/
+│   ├── 6.7-inch/
+│   ├── 6.5-inch/  
+│   └── 5.5-inch/
+├── ipad/
+│   └── 12.9-inch/
+└── android/
+    ├── phone/
+    ├── tablet-7/
+    └── tablet-10/
+```
+
+### Quality Checklist ✅
+- [ ] Screenshot shows real My Branches app content (not placeholder)
+- [ ] Purple theme clearly visible
+- [ ] Text is crisp and readable
+- [ ] No loading spinners or error messages
+- [ ] Correct dimensions (verify in image properties)
+- [ ] File size under 8MB
+- [ ] Proper filename with device suffix
+
+### Device Filename Suffixes
+- iPhone 6.7": `iphone67`
+- iPhone 6.5": `iphone65` 
+- iPhone 5.5": `iphone55`
+- iPad 12.9": `ipad129`
+- Android Phone: `android`
+- Android 7" Tablet: `tablet7`
+- Android 10" Tablet: `tablet10`
+
+### Complete File List Needed (35 total):
+
+**iPhone 6.7-inch (5 files):**
+- dashboard-hero-iphone67.png
+- groups-overview-iphone67.png  
+- event-planning-iphone67.png
+- group-chat-iphone67.png
+- premium-labels-iphone67.png
+
+**iPhone 6.5-inch (5 files):**
+- dashboard-hero-iphone65.png
+- groups-overview-iphone65.png
+- event-planning-iphone65.png  
+- group-chat-iphone65.png
+- premium-labels-iphone65.png
+
+**iPhone 5.5-inch (5 files):**
+- dashboard-hero-iphone55.png
+- groups-overview-iphone55.png
+- event-planning-iphone55.png
+- group-chat-iphone55.png  
+- premium-labels-iphone55.png
+
+**iPad 12.9-inch (5 files):**
+- dashboard-hero-ipad129.png
+- groups-overview-ipad129.png
+- event-planning-ipad129.png
+- group-chat-ipad129.png
+- premium-labels-ipad129.png
+
+**Android Phone (5 files):**
+- dashboard-hero-android.png
+- groups-overview-android.png
+- event-planning-android.png  
+- group-chat-android.png
+- premium-labels-android.png
+
+**Android 7-inch Tablet (5 files):**
+- dashboard-hero-tablet7.png
+- groups-overview-tablet7.png
+- event-planning-tablet7.png
+- group-chat-tablet7.png
+- premium-labels-tablet7.png
+
+**Android 10-inch Tablet (5 files):**
+- dashboard-hero-tablet10.png
+- groups-overview-tablet10.png
+- event-planning-tablet10.png
+- group-chat-tablet10.png  
+- premium-labels-tablet10.png
+
+---
+
+## Troubleshooting
+
+**If pages don't load properly:**
+- Check that the app is running at localhost:5000
+- Verify user authentication if required
+- Try refreshing the page
+- Check browser console for errors
+
+**If screenshots look wrong:**
+- Verify device pixel ratio is set correctly
+- Ensure purple My Branches theme is active
+- Check that content has fully loaded before capturing
+- Verify dimensions match requirements exactly
+
+**Time Estimate:** 45-60 minutes for all 35 screenshots

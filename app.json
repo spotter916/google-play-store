@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "name": "My Branches",
+    "slug": "my-branches",
+    "version": "2.0.0",
+    "platforms": ["ios", "android"],
+    "ios": {
+      "bundleIdentifier": "com.mybranches.app",
+      "buildNumber": "2",
+      "supportsTablet": true,
+      "requireFullScreen": false
+    },
+    "android": {
+      "package": "com.mybranches.app",
+      "versionCode": 2
+    }
+  }
+}
